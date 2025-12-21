@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Miniver&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: lightblue;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    border: solid;
+    width: 300px;
+    height: 496px;
+    border-radius: 20px;
+    background-color: #fff4e0;
+    padding: 20px;
+    box-shadow: 4px 4px 0 rgb(0, 0, 0);
+    border: 2px solid black;
+}
+
+.input-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.input-city {
+    flex: 1;
+    outline: none;
+    padding: 10px 16px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 0 rgb(0, 0, 0);
+    border: 2px solid black;
+}
+
+.search-btn {
+    display: flex;
+    background: #ff7dd8;
+    border: 2px solid black;
+    padding: 9px 10px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 0 rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+.weather-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    gap: 2px;
+}
+
+.location {
+    transform: translateY(3px);
+}
+
