@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Miniver&family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Mega:wght@100..900&family=Space+Grotesk:wght@300..700&display=swap');
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+    font-family: "Lexend Mega", sans-serif;
 }
 
 body {
@@ -17,9 +17,8 @@ body {
 }
 
 .container {
-    border: solid;
     width: 300px;
-    height: 496px;
+    height: 550px;
     border-radius: 20px;
     background-color: #fff4e0;
     padding: 20px;
@@ -32,7 +31,6 @@ body {
     display: flex;
     align-items: center;
     gap: 12px;
-    width: 100%;
     margin-bottom: 20px;
 }
 
@@ -43,19 +41,19 @@ body {
     border-radius: 10px;
     box-shadow: 4px 4px 0 rgb(0, 0, 0);
     border: 2px solid black;
+    width: 100%;
 }
 
 .search-btn {
-    display: flex;
     background: #ff7dd8;
     border: 2px solid black;
-    padding: 9px 10px;
+    padding: 6px 10px;
     border-radius: 10px;
     box-shadow: 4px 4px 0 rgb(0, 0, 0);
     cursor: pointer;
 }
 
-.weather-info {
+.location-info {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -64,6 +62,75 @@ body {
 }
 
 .location {
-    transform: translateY(3px);
+    transform: translateY(1px);
 }
 
+.weather-info {
+    background-color: #fdd135;
+    border-radius: 15px;
+    box-shadow: 4px 4px 0 rgb(0, 0, 0);
+    border: 2px solid black;
+    width: 100%;
+    height: 140px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.weather-icon {
+    width: 3rem;
+    margin-bottom: 5px;
+}
+
+.temp {
+    font-size: 28px;
+}
+
+.ket-temp {
+    font-size: 15px;
+}
+
+.weather-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.card-details {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 0 rgb(0, 0, 0);
+    border: 2px solid black;
+}
+
+.grid-info {
+    font-size: 10px;
+    margin-bottom: 5px;
+}
+
+.grid-icon {
+    width: 30px;
+    margin-bottom: 5px;
+}
+
+.card-details:nth-child(1) {
+    background-color: #95edff;
+}
+
+.card-details:nth-child(2) {
+    background-color: #7dff6b;
+}
+
+.card-details:nth-child(3) {
+    background-color: #ff7fec;
+}
+
+.card-details:nth-child(4) {
+    background-color: #ffc456;
+}
