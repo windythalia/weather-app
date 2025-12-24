@@ -1,63 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather App</title>
-    <link rel="stylesheet" href="style.css">
-    <!-- import google icons -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-
-</head>
-<body>
-    <div class="container">
-        <header class="input-container">
-            <input type="text" class="input-city" placeholder="Cari kota...">
-            <button class="search-btn">
-            <span class="material-symbols-outlined">search</span>
-            </button>
-        </header>
-
-        <section class="location-info">
-            <div class="location">
-                <span class="material-symbols-outlined">location_on</span>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Weather App</title>
+        <link rel="stylesheet" href="style.css">
+        <!-- import google icons -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        
+    </head>
+    <body>
+        <div class="container">
+            <header class="input-container">
+                <input type="text" class="input-city" placeholder="Search city...">
+                <button class="search-btn">
+                    <span class="material-symbols-outlined">search</span>
+                </button>
+            </header>
+            
+            <section class="location-info" style="display:none">
+                <div class="location">
+                    <span class="material-symbols-outlined">location_on</span>
+                    <h3 class="country">Jakarta</h3>
+                </div>
+                
+                <div class="weather-info">
+                    <img src="/img/sunny.svg" class="weather-icon">
+                    <p class="temp">32°C</p>
+                    <p class="ket-temp">Cerah</p>
+                    
+                </div>
+                
+                <div class="weather-details">
+                    <div class="card-details">
+                        <img src="img/water.svg" class="grid-icon">
+                        <p class="grid-info">Humidity</p>
+                        <p class="grid-desc" id="humidity">78%</p>
+                    </div>
+                    
+                    <div class="card-details">
+                        <img src="img/air.svg" class="grid-icon">
+                        <p class="grid-info">Wind Speed</p>
+                        <p class="grid-desc" id="wind-value">12 km/h</p>
+                    </div>
+                    
+                    <div class="card-details">
+                        <img src="img/sunny.svg" class="grid-icon" >
+                        <p class="grid-info">Feels Like</p>
+                        <p class="grid-desc" id="feels-like">36°C</p>
+                    </div>
+                    
+                    <div class="card-details">
+                <img src="img/visibility.svg" class="grid-icon">
+                <p class="grid-info">Visibility</p>
+                <p class="grid-desc" id="visibility">8</p>
             </div>
-            <h3 class="country">Jakarta</h3>
+        </div>
+    </section>
+        <section class="search-message">
+            <img src="/img/search.svg" class="search-icon">
+            <div>
+                <h2>Search City</h2>
+                <h4 class="search-txt"></h4>
+                <p class="search-desc">Find out the weather conditions of the city</p>
+            </div>
         </section>
-
-        <div class="weather-info">
-            <img src="/img/sunny.svg" class="weather-icon">
-            <p class="temp">32°C</p>
-            <p class="ket-temp">Cerah</p>
-            
-        </div>
-
-        <div class="weather-details">
-            <div class="card-details">
-                <img src="img/water.svg" class="grid-icon">
-                <p class="grid-info">Kelembapan</p>
-                <p class="grid-desc">78%</p>
-            </div>
-            
-            <div class="card-details">
-                <img src="img/air.svg" class="grid-icon">
-                <p class="grid-info">Kecepatan Angin</p>
-                <p class="grid-desc">12 km/h</p>
-            </div>
-            
-            <div class="card-details">
-                <img src="img/sunny.svg" class="grid-icon">
-                <p class="grid-info">Terasa Seperti</p>
-                <p class="grid-desc">36°C</p>
-            </div>
-            
-            <div class="card-details">
-                <img src="img/uv.svg" class="grid-icon">
-                <p class="grid-info">Indeks UV</p>
-                <p class="grid-desc">8</p>
-            </div>
-        </div>
     </div>
+
 
     <script src="script.js"></script>
 </body>

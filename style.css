@@ -55,6 +55,11 @@ body {
 
 .location-info {
     display: flex;
+    flex-direction: column;
+}
+
+.location {
+    display: flex;
     justify-content: space-between;
     align-items: center;
     position: absolute;
@@ -64,6 +69,11 @@ body {
 .location {
     transform: translateY(1px);
 }
+
+.country {
+    font-size: 14px;
+}
+
 
 .weather-info {
     background-color: #fdd135;
@@ -77,7 +87,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 60px;
+    margin-top: 40px;
 }
 
 .weather-icon {
@@ -110,12 +120,12 @@ body {
 }
 
 .grid-info {
-    font-size: 10px;
+    font-size: 11px;
     margin-bottom: 5px;
 }
 
 .grid-icon {
-    width: 30px;
+    width: 25px;
     margin-bottom: 5px;
 }
 
@@ -133,4 +143,18 @@ body {
 
 .card-details:nth-child(4) {
     background-color: #ffc456;
+}
+
+.search-icon {
+    width: 70px;
+}
+
+.search-message {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+    margin-top: 50%;
 }
